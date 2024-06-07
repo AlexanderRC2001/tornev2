@@ -1,0 +1,1827 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    filter: contrast(90%);
+    font-family: "Montserrat", sans-serif;
+    background-color: black;
+    background-image: url(/img/qqquad.svg);
+    justify-content: center;
+   width: 100%;
+    
+}
+
+:root {
+    --color1: #ffffff;
+    --color2: #f5c80e;
+    --color3: rgb(23, 38, 69);
+    --color-cajas:#18181a;
+    --fondo-rojo:linear-gradient(70rad ,rgba(255, 0, 76, 0.089) ,rgba(0, 0, 255, 0));
+    --fondo-verde:linear-gradient(70rad ,rgba(91, 110, 21, 0.089) ,rgba(0, 0, 255, 0));
+    --fondo-apartado: rgba(0, 0, 0, 0.979);
+}
+
+header {
+    height: 70px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background: black;
+  overflow: hidden;
+    box-shadow: 1px 1px 3px black;
+}
+.cabeza {
+    display: flex;
+}
+nav {
+    width: 20em;
+    height: 100%;
+    display: flex;
+    margin-left: 50%;
+ 
+    font-size: 14px;
+}
+
+.apatado {
+    width: calc(100% / 3);
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.apatado:hover{
+    background-color: #4d4d4d;
+}
+
+.apatado a {
+    text-decoration: none;
+    color: var(--color1);
+    margin: 10px;
+}
+
+.img {
+    width: 200px;
+    margin: 10px;
+    height: 50px;
+    margin-left: 60px;
+}
+
+.img img {
+    width: 80%;
+    height: 99%;
+}
+
+/* ----- APARTADO PRINCIPAL 1---------*/
+.apartadop {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: rgba(0, 0, 0, 0.575);
+    box-shadow: 1px 1px 5px black;
+   
+}
+
+.incribcion {
+    margin: 20px;
+    width: 90%;
+    height: 90%;
+    display: flex;
+    filter: contrast(90%);
+    font-family: "Montserrat", sans-serif;
+    animation: carucel2 30s ease-in-out infinite;
+}
+
+.text {
+    color: rgba(255, 255, 255, 0.849);
+    width: 670px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "Montserrat", sans-serif;
+    font-size: 24px;
+   
+   
+}
+
+.text h1 {
+    margin: 0;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.text h2 {
+    margin: 0;
+    padding: 0;
+}
+
+.carucel {
+    width: 550px;
+    height: 100%;
+  
+    overflow: hidden;
+}
+
+.padre-silider {
+    width: 100%;
+    height: 300%;
+    display: flex;
+    flex-direction: column;
+    animation: carucel 30s ease-in-out infinite;
+    
+}
+
+.silider {
+    display: flex;
+    color: white;
+    height: calc(100% / 3);
+    align-items: center;
+    font-size: 18px;
+    padding: 10px;
+    text-shadow: 1px 1px 1px black;
+}
+
+
+
+#img1 {
+    background-image: url(/img/baloncesto.png);
+    background-size: 50% 100%;
+    background-repeat: no-repeat;
+    background-position: 280px;
+   
+   
+}
+#img2 {
+    background-image: url(/img/voleivol.png);
+    background-size: 50% 90%;
+    background-repeat: no-repeat;
+    background-position: 310px;
+   
+}
+#img3 {
+    background-image: url(/img/futbol.png);
+    background-size: 50% 99%;
+    background-repeat: no-repeat;
+    background-position: 280px;
+    
+}
+
+@keyframes carucel{
+
+    0% ,10%{
+     transform: translateY(0%);
+    
+    }
+    20%,30%{
+        transform: translateY(-33.33%);
+      
+    }
+
+    40%,50%{
+
+        transform: translateY(-66.66%);
+       
+    }
+    60% ,70%{
+        transform: translateY(-33.33%);
+        
+       }
+       80%,90%{
+           transform: translateY(-33.33%);
+         
+       }
+   
+       100%{
+   
+           transform: translateY(0%);
+          
+       }
+   
+
+
+
+}
+
+@keyframes carucel2{
+
+    0% ,10%{
+     
+        background: linear-gradient(70rad ,rgba(0, 0, 255, 0.555) ,rgba(0, 0, 255, 0));
+    }
+    20%,30%{
+       
+        background: linear-gradient(70rad ,rgba(255, 0, 76, 0.555) ,rgba(0, 0, 255, 0));
+    }
+
+    40%,50%{
+
+       
+        background: linear-gradient(70rad ,rgba(91, 110, 21, 0.555) ,rgba(0, 0, 255, 0));
+    }
+    60% ,70%{
+       
+         background: linear-gradient(70rad ,rgba(0, 0, 255,0.555) ,rgba(0, 0, 255, 0));
+       }
+       80%,90%{
+          
+           background: linear-gradient(70rad ,rgba(255, 0, 76, 0.555) ,rgba(0, 0, 255, 0));
+       }
+   
+       100%{
+   
+          
+        background: linear-gradient(70rad ,rgba(91, 110, 21, 0.555) ,rgba(0, 0, 255, 0));
+       }
+   
+
+
+
+}
+
+/* ----- APARTADO 2---------*/
+
+.apartado2{
+    width: 100%;
+    height: 490px;
+    background-color: var(--fondo-apartado);
+    display: flex;
+    flex-direction: column;
+     flex-wrap: wrap;
+     color: #ffffff;
+
+}
+.apartado2 h1{
+    font-weight: 400;
+margin-left: 80px;
+height: 40px;
+border-left:  solid 5px var(--color3);
+
+
+
+}
+.info ul{
+    list-style: none;
+    
+    height: 300px;
+    border-radius: 10px;
+   margin-left: 60px;
+   
+   padding: 5px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+}
+ .info ul div{
+    
+    padding: 4px;
+    margin: 5px;
+    background-color: var(--color-cajas);
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 1px 1px 1px var(--color-cajas);
+    
+ 
+}
+.info{
+    display: flex;
+    border: solid black 1px ;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+    height: 400px;
+   
+}
+.info h2{
+    font-size: 18px;
+    font-weight: 300;
+   
+}
+.clase{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.clase h2{
+    margin: 10px;
+  
+    padding: 20px;
+    width: 185px;
+    color: white;
+  box-shadow: 1px 1px 3px white;
+   border-radius: 10px;
+ background: var(--color-cajas);
+}
+.categ{
+    height: 210px;
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+   
+}
+.categorias{
+   
+  margin-left: 40px;
+  padding: 10px;
+  width: 800px;
+   
+   
+    
+}
+.categ div{
+    width: 330px;
+    margin: 10px;
+   
+    display: flex;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: var(--color-cajas);
+    padding: 10px;
+    box-shadow: var(--color-cajas);
+}
+.categ h2{
+    font-weight: 300;
+}
+a{
+    color :#f5c80e;
+}
+/*----apartado 3---------*/
+.Apartado3{
+    width: 100%;
+    height: 540px;
+    background-color: var(--fondo-apartado);
+   
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+   
+
+}
+.requisitos{
+    width: 560px;
+    height: 480px;
+   
+    margin: 1rem;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   
+}
+
+.requisito{
+    margin: 10px;
+    font-size: 14px;
+   
+}
+.requisito h2{
+    font-weight: 500;
+    text-shadow: 1px 4px 5px var(--color3);
+    border-left: solid 3px var(--color3);
+    padding: 10px;
+    background: var(--fondo-verde);
+    box-shadow: 1px 1px 1px black;
+   
+    
+}
+.requisitos h1{
+    text-align: center;
+}
+#req2{
+    background-image: url("/img/futbol.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: var(--color-cajas);
+    
+    background-position: 350px;
+    margin-right:60px;
+
+}
+
+#req1{
+    background-image: url();
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: var(--color-cajas);
+    
+    background-position: 150px;
+    margin-right:60px;
+
+}
+#req1 h1{
+ margin-top: 39px;
+}
+
+/* -----------------Publicidad----------------*/
+
+.publicidad{
+ background-color: var(--fondo-apartado);
+ width: 100%;
+ height: 140px;
+ display: flex;
+ 
+ align-items: center;
+ 
+ 
+ 
+}
+.publiciti{
+    width: 90%;
+    height: 100px;
+    background: linear-gradient(70deg ,rgba(255, 255, 255, 0.562) ,rgba(0, 0, 0, 0));
+    margin-left: 50px;
+    
+    display: flex ;
+    flex-wrap: wrap;
+    align-items: center;
+    position: sticky;
+ inset-block-start: auto;
+ top:10px;
+    z-index: 1;
+   
+}
+
+.img2 {
+    width: 200px;
+   margin: 10px;
+    height: 80px;
+   
+   
+}
+
+.img2 img {
+    width: 80%;
+    height: 99%;
+}
+.carucel-publicidad{
+    width: 800px;
+    height: 80px;
+    
+   overflow: hidden;
+    margin-right: 0;
+    margin: 10px;
+    margin-left: 60px;
+    
+
+}
+
+.publ{
+    width: 100%;
+    height: 300%;
+    animation:carucel 10s ease-in-out infinite 
+    
+
+}
+
+.publ div{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    color: #ffffff;
+}
+.publ h2{
+    font-weight: 300;
+}
+
+/*----footer-----*/
+footer{
+    
+    width: 100%;
+    height: 140px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--fondo-apartado);
+    
+}
+footer h2{
+    color: #ffffff;
+   
+    text-align: center;
+}
+footer h3{
+    color: var(--color-cajas);
+    text-align: center;
+  margin-top: 24px;
+  margin-left: 3px;
+  font-size: 20px;
+}
+.autor{
+    display: flex;
+    border-top: solid 4px var(--color3);
+}
+
+  
+  
+  .example-2 .icon-content {
+    margin: 10px;
+    position: relative;
+  }
+  .example-2 .icon-content .tooltip {
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #fff;
+    padding: 6px 10px;
+    border-radius: 5px;
+    opacity: 0;
+    visibility: hidden;
+    font-size: 14px;
+    transition: all 0.3s ease;
+  }
+  .example-2 .icon-content:hover .tooltip {
+    opacity: 1;
+    visibility: visible;
+    top: -50px;
+  }
+  .example-2 .icon-content a {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    color: #4d4d4d;
+    background-color: #fff;
+    transition: all 0.3s ease-in-out;
+  }
+  .example-2 .icon-content a:hover {
+    box-shadow: 3px 2px 45px 0px rgb(0 0 0 / 12%);
+  }
+  .example-2 .icon-content a svg {
+    position: relative;
+    z-index: 1;
+    width: 20px;
+    height: 20px;
+  }
+  .example-2 .icon-content a:hover {
+    color: white;
+  }
+  .example-2 .icon-content a .filled {
+    position: absolute;
+    top: auto;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background-color: #000;
+    transition: all 0.3s ease-in-out;
+  }
+  .example-2 .icon-content a:hover .filled {
+    height: 100%;
+  }
+  
+  .example-2 .icon-content a[data-social="linkedin"] .filled,
+  .example-2 .icon-content a[data-social="linkedin"] ~ .tooltip {
+    background-color: #0274b3;
+  }
+  
+  .example-2 .icon-content a[data-social="github"] .filled,
+  .example-2 .icon-content a[data-social="github"] ~ .tooltip {
+    background-color: #24262a;
+  }
+  .example-2 .icon-content a[data-social="instagram"] .filled,
+  .example-2 .icon-content a[data-social="instagram"] ~ .tooltip {
+    background: linear-gradient(
+      45deg,
+      #405de6,
+      #5b51db,
+      #b33ab4,
+      #c135b4,
+      #e1306c,
+      #fd1f1f
+    );
+  }
+  .example-2 .icon-content a[data-social="youtube"] .filled,
+  .example-2 .icon-content a[data-social="youtube"] ~ .tooltip {
+    background-color: #ff0000;
+  }
+  .example-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+ 
+
+
+  /*---codigo-responsi---compu*/
+
+@media  (min-width: 990px) and (max-width: 1281px){
+    header {
+        height: 70px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        background: black;
+      overflow: hidden;
+        box-shadow: 1px 1px 3px black;
+    }
+    .cabeza {
+        display: flex;
+    }
+    nav {
+        width: 20em;
+        height: 100%;
+        display: flex;
+        margin-left: 30%;
+     
+        font-size: 14px;
+    }
+    
+    .apatado {
+        width: calc(100% / 3);
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    
+    }
+    .apatado:hover{
+        background-color: #4d4d4d;
+    }
+    
+    .apatado a {
+        text-decoration: none;
+        color: var(--color1);
+        margin: 10px;
+    }
+    
+    .img {
+        width: 200px;
+        margin: 10px;
+        height: 50px;
+        margin-left: 60px;
+    }
+    
+    .img img {
+        width: 80%;
+        height: 99%;
+    }
+    /* ----- APARTADO PRINCIPAL 1---------*/
+.apartadop {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: rgba(0, 0, 0, 0.575);
+    box-shadow: 1px 1px 5px black;
+   
+}
+
+.incribcion {
+    margin: 20px;
+    width: 90%;
+    height: 90%;
+    display: flex;
+    filter: contrast(90%);
+    font-family: "Montserrat", sans-serif;
+    animation: carucel2 30s ease-in-out infinite;
+}
+
+.text {
+    color: rgba(255, 255, 255, 0.849);
+    width: 670px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "Montserrat", sans-serif;
+    font-size: 24px;
+   
+   
+}
+
+.text h1 {
+    margin: 0;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.text h2 {
+    margin: 0;
+    padding: 0;
+}
+
+.carucel {
+    width: 550px;
+    height: 100%;
+  
+    overflow: hidden;
+}
+
+.padre-silider {
+    width: 100%;
+    height: 300%;
+    display: flex;
+    flex-direction: column;
+    animation: carucel 30s ease-in-out infinite;
+    
+}
+
+.silider {
+    display: flex;
+    color: white;
+    height: calc(100% / 3);
+    align-items: center;
+    font-size: 18px;
+    padding: 10px;
+    text-shadow: 1px 1px 1px black;
+}
+.silider h2{
+    font-size: 24px;
+}
+
+
+
+#img1 {
+    background-image: url(/img/baloncesto.png);
+    background-size: 40% 90%;
+    background-repeat: no-repeat;
+    background-position: 250px;
+   
+   
+}
+#img2 {
+    background-image: url(/img/voleivol.png);
+    background-size: 55% 90%;
+    background-repeat: no-repeat;
+    background-position: 210px;
+   
+}
+#img3 {
+    background-image: url(/img/futbol.png);
+    background-size: 40% 99%;
+    background-repeat: no-repeat;
+    background-position: 250px;
+    
+}
+/* ----- APARTADO 2---------*/
+
+.apartado2{
+    width: 100%;
+    height: 490px;
+    background-color: var(--fondo-apartado);
+    display: flex;
+    flex-direction: column;
+     flex-wrap: wrap;
+     color: #ffffff;
+
+}
+.apartado2 h1{
+    font-weight: 400;
+margin-left: 80px;
+height: 40px;
+border-left:  solid 5px var(--color3);
+
+
+
+}
+.info ul{
+    list-style: none;
+    
+    height: 320px;
+    border-radius: 10px;
+   margin-left: 60px;
+   
+   padding: 5px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+ 
+}
+ .info ul div{
+    
+    padding: 4px;
+    margin: 5px;
+    background-color: var(--color-cajas);
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 1px 1px 1px var(--color-cajas);
+
+}
+
+.info{
+    display: flex;
+    border: solid black 1px ;
+    align-items: center;
+    width: 100%;
+    
+    height: 400px;
+   
+}
+.info h2{
+    font-size: 14px;
+    font-weight: 300;
+   
+}
+.clase{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.clase h2{
+    
+  
+    padding: 20px;
+    width: 125px;
+    color: white;
+  box-shadow: 1px 1px 3px white;
+   border-radius: 10px;
+ background: var(--color-cajas);
+}
+.categ{
+    height: 210px;
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+   
+}
+.categorias{
+   
+  margin-left: 40px;
+  padding: 10px;
+  width: 800px;
+  
+   
+    
+}
+.categ div{
+    width: 230px;
+    margin: 10px;
+   
+    display: flex;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: var(--color-cajas);
+    padding: 10px;
+    box-shadow: var(--color-cajas);
+}
+.categ h2{
+    font-weight: 300;
+}
+a{
+    color :#f5c80e;
+}
+/* -----------------Publicidad----------------*/
+
+.publicidad{
+    background-color: var(--fondo-apartado);
+    width: 100%;
+    height: 140px;
+    display: flex;
+    
+    align-items: center;
+    
+    
+    
+   }
+   .publiciti{
+       width: 90%;
+       height: 100px;
+       background: linear-gradient(70deg ,rgba(255, 255, 255, 0.562) ,rgba(0, 0, 0, 0));
+       margin-left: 50px;
+       
+       display: flex ;
+       flex-wrap: wrap;
+       align-items: center;
+       position: sticky;
+    inset-block-start: auto;
+    top:10px;
+       z-index: 1;
+      
+   }
+   
+   .img2 {
+       width: 200px;
+      margin: 10px;
+       height: 80px;
+      
+      
+   }
+   
+   .img2 img {
+       width: 80%;
+       height: 99%;
+   }
+   .carucel-publicidad{
+       width: 600px;
+       height: 80px;
+       
+      overflow: hidden;
+       margin-right: 0;
+       margin: 10px;
+       margin-left: 60px;
+    
+       
+   
+   }
+   
+   .publ{
+       width: 100%;
+       height: 300%;
+       animation:carucel 10s ease-in-out infinite 
+       
+   
+   }
+   
+   .publ div{
+       width: 100%;
+       height: 80px;
+       display: flex;
+       justify-content: center;
+       color: #ffffff;
+       justify-content: center;
+       align-items: center;
+   }
+   .publ h2{
+       font-weight: 300;
+       font-size: 17px;
+   }
+   /*----apartado 3---------*/
+.Apartado3{
+    width: 100%;
+    height: 890px;
+    background-color: var(--fondo-apartado);
+   
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+   
+
+}
+.requisitos{
+    width: 680px;
+    height: 390px;
+   
+    margin: 1rem;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   
+}
+
+.requisito{
+    margin: 10px;
+    font-size: 14px;
+   
+}
+.requisito div{
+    margin: 0;
+}
+.requisito h2{
+    font-weight: 500;
+    text-shadow: 1px 4px 5px var(--color3);
+    border-left: solid 3px var(--color3);
+    padding: 10px;
+    background: var(--fondo-verde);
+    box-shadow: 1px 1px 1px black;
+   
+    
+}
+.requisitos h1{
+    text-align: center;
+    font-size: 15px;
+}
+#req2{
+    background-image: url("/img/futbol.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: var(--color-cajas);
+    
+    background-position: 350px;
+    margin-right:60px;
+
+}
+
+#req1{
+    background-image: url();
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: var(--color-cajas);
+    
+    background-position: 150px;
+    margin-right:60px;
+
+}
+#req1 h1{
+ margin-top: 39px;
+}
+}
+ /*---codigo-responsi---table*/
+@media  (min-width:780px) and (max-width:989px){
+   
+    header {
+     width: 100%;
+     height: 50px;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     
+     margin: 0;
+     overflow:hidden;
+    }
+    nav {
+     width: 100%;
+     height: 100%;
+     display: flex;
+     margin-left: 50%;
+     flex-direction: column;
+     font-size: 14px;
+     
+     margin: 0;
+     
+     }
+     .apatado {
+     width: 100%;
+     height: 100%;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     
+     }
+ 
+     .img {
+     width: 240px;
+     margin: 10px;
+     height: 50px;
+     display: flex;
+     margin-top: 60px ;
+     
+     }
+     .img div {
+     margin: 10px;
+     
+     }
+ 
+     .img img {
+     width: 80%;
+     height: 99%;
+     }
+     /* ----- APARTADO PRINCIPAL 1---------*/
+ .apartadop {
+     width: 100%;
+     height: 300px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-wrap: wrap;
+     background-color: rgba(0, 0, 0, 0.575);
+     box-shadow: 1px 1px 5px black;
+     
+    
+ }
+ .incribcion {
+     margin: 20px;
+     width: 90%;
+     height: 60%;
+     display: flex;
+     filter: contrast(90%);
+     font-family: "Montserrat", sans-serif;
+     animation: carucel2 30s ease-in-out infinite;
+     flex-direction: column-reverse;
+     text-align: center;
+ }
+ #img1 {
+     background-image: url(/img/baloncesto.png);
+     background-size: 20% 90%;
+     background-repeat: no-repeat;
+     background-position: 480px;
+    
+    
+ }
+ .silider {
+     justify-content: center;
+ }
+ #img2 {
+     background-image: url(/img/voleivol.png);
+     background-size: 20% 90%;
+     background-repeat: no-repeat;
+     background-position: 530px;
+    
+ }
+ #img3 {
+     background-image: url(/img/futbol.png);
+     background-size: 20% 99%;
+     background-repeat: no-repeat;
+     background-position: 560px;
+     
+ }
+ 
+ .carucel {
+     width: 100%;
+     height: 0;
+   
+     overflow: hidden;
+ }
+ .text{
+     justify-content: center;
+     align-items: center;
+     text-align: center;
+     
+     width: 100%;
+ }
+ .text h1{
+     text-align: center;
+     
+     
+     width: 100%;
+ }
+ 
+ /* ----- APARTADO 2---------*/
+ .apartado2{
+     width: 100%;
+     height: 690px;
+     background-color: var(--fondo-apartado);
+     display: flex;
+     flex-direction: column;
+      flex-wrap: wrap;
+      color: #ffffff;
+      
+ 
+ }
+ .apartado2 h1{
+     font-weight: 200;
+ margin: 0;
+ height: 40px;
+ border-left:  solid 5px black;
+  margin-top: 20px;
+ text-align: center;
+ text-decoration:underline;
+ 
+ }
+ .info ul{
+     list-style: none;
+    width: 100%;
+     height: 580px;
+     border-radius: 10px;
+    margin: 0;
+    margin-top: 10px;
+    padding: 5px;
+   display: flex;
+ 
+    align-items: center;
+    justify-content: center;
+ }
+  .info ul div{
+     
+     padding: 4px;
+     margin: 5px;
+     background-color: var(--color-cajas);
+     border-radius: 10px;
+     text-align: center;
+     box-shadow: 1px 1px 1px var(--color-cajas);
+     width: 600px;
+     height: 80px;
+     
+  
+ }
+ .info{
+     display: flex;
+     border: solid black 1px ;
+     align-items: center;
+     width: 100%;
+     flex-direction: column;
+     height: 600px;
+    
+ }
+ .info h2{
+     font-size: 18px;
+     font-weight: 300;
+    
+ }
+ .clase{
+     display: flex;
+     justify-content: center;
+ }
+ .clase h2{
+     margin: 10px;
+   
+     padding: 20px;
+     width: 185px;
+     color: white;
+   box-shadow: 1px 1px 3px white;
+    border-radius: 10px;
+  background: var(--color-cajas);
+  text-align: center;
+ }
+ .categ{
+     height: 210px;
+     
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: center;
+    
+ }
+ .categorias{
+    
+  
+   padding: 10px;
+   width: 800px;
+    margin: 0;
+    
+     
+ }
+ .categ div{
+     width: 330px;
+     margin: 10px;
+    
+     display: flex;
+     border-radius: 10px;
+     justify-content: center;
+     align-items: center;
+     text-align: center;
+     background: var(--color-cajas);
+     padding: 10px;
+     box-shadow: var(--color-cajas);
+ }
+ .categ h2{
+     font-weight: 300;
+ }
+ a{
+     color :#f5c80e;
+ }
+ /*----apartado 3---------*/
+ .Apartado3{
+     width: 100%;
+     height: 740px;
+     background-color: var(--fondo-apartado);
+    align-items: center;
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: center;
+     
+     flex-direction: column;
+    
+ 
+ }
+ .requisitos{
+     width: 670px;
+     height: 300px;
+    padding: 10px;
+    margin: 0;
+     color: white;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     margin-left: 40px;
+    
+ }
+ 
+ .requisito{
+     margin: 0;
+     font-size: 12px;
+    
+ }
+ .requisito h2{
+     font-weight: 300;
+     text-shadow: 1px 4px 5px var(--color3);
+     border-left: solid 3px var(--color3);
+   
+     background: var(--fondo-verde);
+     box-shadow: 1px 1px 1px black;
+    
+     
+ }
+ .requisitos h1{
+     text-align: center;
+     font-size: 14px;
+ }
+ #req2{
+     background-image: url("/img/futbol.png");
+     background-size: contain;
+     background-repeat: no-repeat;
+     background-color: var(--color-cajas);
+     
+     background-position: 380px;
+     
+  margin-top: 10px;
+ }
+ 
+ #req1{
+     background-image: url();
+     background-size: contain;
+     background-repeat: no-repeat;
+     background-color: var(--color-cajas);
+ 
+ }
+ #req1 h1{
+  margin-top: 39px;
+ }
+ 
+ 
+ /* -----------------Publicidad----------------*/
+ 
+ .publicidad{
+     background-color: var(--fondo-apartado);
+     width: 100%;
+     height: 140px;
+     display: flex;
+     
+     align-items: center;
+     
+     
+     
+    }
+    .publiciti{
+        width: 98%;
+        height: 100px;
+        background: linear-gradient(70deg ,rgba(255, 255, 255, 0.562) ,rgba(0, 0, 0, 0));
+       
+       
+        display: flex ;
+        flex-wrap: wrap;
+        align-items: center;
+        position: sticky;
+     inset-block-start: auto;
+     top:10px;
+        z-index: 1;
+        margin: 20px;
+       
+    }
+    
+    .img2 {
+        width: 200px;
+       margin: 10px;
+        height: 80px;
+       
+       
+    }
+    
+    .img2 img {
+        width: 80%;
+        height: 99%;
+    }
+    .carucel-publicidad{
+        width: 67%;
+        height: 80px;
+        
+       overflow: hidden;
+        margin-right: 0;
+        margin: 10px;
+        margin-left: 10px;
+       
+        
+    
+    }
+    
+    .publ{
+        width: 100%;
+        height: 300%;
+        animation:carucel 10s ease-in-out infinite;
+        
+     
+        
+    
+    }
+    
+    .publ div{
+        width: 100%;
+        height: 80px;
+        display: flex;
+        justify-content: center;
+        color: #ffffff;
+        align-items: center;
+    }
+    .publ h2{
+        font-weight: 300;
+        font-size: 16px;
+    }
+    
+ 
+ 
+   }
+  /*---codigo-responsi---celular*/
+  @media (max-width:780px){
+   
+    header {
+     width: 100%;
+     height: 50px;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     
+     margin: 0;
+     overflow:hidden;
+    }
+    nav {
+     width: 100%;
+     height: 100%;
+     display: flex;
+     margin-left: 50%;
+     flex-direction: column;
+     font-size: 14px;
+     
+     margin: 0;
+     
+     }
+     .apatado {
+     width: 100%;
+     height: 100%;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     
+     }
+ 
+     .img {
+     width: 240px;
+     margin: 10px;
+     height: 50px;
+     display: flex;
+     margin-top: 60px ;
+     
+     }
+     .img div {
+     margin: 10px;
+     
+     }
+ 
+     .img img {
+     width: 80%;
+     height: 99%;
+     }
+     /* ----- APARTADO PRINCIPAL 1---------*/
+ .apartadop {
+     width: 100%;
+     height: 300px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-wrap: wrap;
+     background-color: rgba(0, 0, 0, 0.575);
+     box-shadow: 1px 1px 5px black;
+     
+    
+ }
+ .incribcion {
+     margin: 20px;
+     width: 80%;
+     height: 60%;
+     display: flex;
+     filter: contrast(90%);
+     font-family: "Montserrat", sans-serif;
+     animation: carucel2 30s ease-in-out infinite;
+     flex-direction: column-reverse;
+     text-align: center;
+ }
+ #img1 {
+     background-image: url(/img/baloncesto.png);
+     background-size: 20% 90%;
+     background-repeat: no-repeat;
+     background-position: 480px;
+    
+    
+ }
+ .silider {
+     justify-content: center;
+ }
+ #img2 {
+     background-image: url(/img/voleivol.png);
+     background-size: 20% 90%;
+     background-repeat: no-repeat;
+     background-position: 530px;
+    
+ }
+ #img3 {
+     background-image: url(/img/futbol.png);
+     background-size: 20% 99%;
+     background-repeat: no-repeat;
+     background-position: 560px;
+     
+ }
+ 
+ .carucel {
+     width: 100%;
+     height: 0;
+   
+     overflow: hidden;
+ }
+ .text{
+     justify-content: center;
+     align-items: center;
+     text-align: center;
+     
+     width: 100%;
+ }
+ .text h1{
+     text-align: center;
+     font-size: 24px;
+     
+     width: 100%;
+ }
+ 
+ /* ----- APARTADO 2---------*/
+ .apartado2{
+     width: 100%;
+     height: 790px;
+     background-color: var(--fondo-apartado);
+     display: flex;
+     flex-direction: column;
+      flex-wrap: wrap;
+      justify-content: center;
+      color: #ffffff;
+      
+ 
+ }
+ .apartado2 h1{
+     font-weight: 200;
+ margin: 0;
+ height: 40px;
+ border-left:  solid 5px black;
+  margin-top: 20px;
+ text-align: center;
+ text-decoration:underline;
+ font-size: 18px;
+ 
+ }
+ .info ul{
+     list-style: none;
+    width: 100%;
+     height: 580px;
+     border-radius: 10px;
+    margin: 0;
+    margin-top: 10px;
+    padding: 5px;
+   display: flex;
+ 
+    align-items: center;
+    justify-content: center;
+ }
+  .info ul div{
+     
+     padding: 4px;
+     margin: 5px;
+     background-color: var(--color-cajas);
+     border-radius: 10px;
+     text-align: center;
+     box-shadow: 1px 1px 1px var(--color-cajas);
+     width: 290px;
+     height: 90px;
+     
+  
+ }
+ .info{
+     display: flex;
+     border: solid black 1px ;
+     align-items: center;
+     width: 100%;
+     flex-direction: column;
+     height: 680px;
+    
+ }
+ .info h2{
+     font-size: 15px;
+     font-weight: 300;
+    
+ }
+ .clase{
+     display: flex;
+     justify-content: center;
+ }
+ .clase h2{
+     margin: 10px;
+   
+     padding: 20px;
+     width: 80px;
+     color: white;
+   box-shadow: 1px 1px 3px white;
+    border-radius: 10px;
+  background: var(--color-cajas);
+  text-align: center;
+  
+ }
+ .categ{
+     height: 210px;
+     
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: center;
+    
+ }
+ .categorias{
+    
+  
+   padding: 10px;
+   width: 800px;
+    margin: 0;
+    
+     
+ }
+ .categ div{
+     width: 150px;
+     margin: 10px;
+    
+     display: flex;
+     border-radius: 10px;
+     justify-content: center;
+     align-items: center;
+     text-align: center;
+     background: var(--color-cajas);
+     padding: 10px;
+     box-shadow: var(--color-cajas);
+ }
+ .categ h2{
+     font-weight: 300;
+ }
+ a{
+     color :#f5c80e;
+ }
+ /*----apartado 3---------*/
+ .Apartado3{
+     width: 100%;
+     height: 740px;
+     background-color: var(--fondo-apartado);
+    align-items: center;
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: center;
+     
+     flex-direction: column;
+    
+ 
+ }
+ .requisitos{
+     width: 310px;
+     height: 300px;
+    padding: 10px;
+    margin: 0;
+     color: white;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     margin-left: 40px;
+    
+ }
+ 
+ .requisito{
+     margin: 0;
+     font-size: 12px;
+    
+ }
+ .requisito h2{
+     font-weight: 300;
+     text-shadow: 1px 4px 5px var(--color3);
+     border-left: solid 3px var(--color3);
+   
+     background: var(--fondo-verde);
+     box-shadow: 1px 1px 1px black;
+    
+     
+ }
+ .requisitos h1{
+     text-align: center;
+     font-size: 14px;
+ }
+ #req2{
+     background-image: url("/img/futbol.png");
+     background-size: contain;
+     background-repeat: no-repeat;
+     background-color: var(--color-cajas);
+     
+     background-position: 380px;
+     
+  margin-top: 10px;
+ }
+ 
+ #req1{
+     background-image: url();
+     background-size: contain;
+     background-repeat: no-repeat;
+     background-color: var(--color-cajas);
+ 
+ }
+ #req1 h1{
+  margin-top: 39px;
+ }
+ 
+ 
+ /* -----------------Publicidad----------------*/
+ 
+ .publicidad{
+     background-color: var(--fondo-apartado);
+     width: 100%;
+     height: 140px;
+     display: flex;
+     
+     align-items: center;
+     
+     
+     
+    }
+    .publiciti{
+        width: 98%;
+        height: 100px;
+        background: linear-gradient(70deg ,rgba(255, 255, 255, 0.562) ,rgba(0, 0, 0, 0));
+        flex-direction: column;
+       
+        display: flex ;
+        flex-wrap: wrap;
+        align-items: center;
+        position: sticky;
+     inset-block-start: auto;
+     top:10px;
+        z-index: 1;
+        margin: 20px;
+       
+    }
+    
+    .img2 {
+        width: 0px;
+       margin: 10px;
+        height: 80px;
+       
+       
+    }
+    
+    .img2 img {
+        width: 100%;
+        height: 100%;
+    }
+    .carucel-publicidad{
+        width: 90%;
+        height: 80px;
+        
+       overflow: hidden;
+        margin-right: 0;
+        margin: 10px;
+        margin-left: 10px;
+       
+        
+    
+    }
+    
+    .publ{
+        width: 100%;
+        height: 300%;
+        animation:carucel 10s ease-in-out infinite;
+        
+     
+        
+    
+    }
+    
+    .publ div{
+        width: 100%;
+        height: 80px;
+        display: flex;
+        justify-content: center;
+        color: #ffffff;
+        align-items: center;
+    }
+    .publ h2{
+        font-weight: 300;
+        font-size: 12px;
+    }
+    footer{
+    
+        width: 100%;
+        height: 140px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--fondo-apartado);
+        
+    }
+    footer h2{
+        color: #ffffff;
+       font-size: 14px;
+        text-align: center;
+    }
+    footer h3{
+        color: var(--color-cajas);
+        text-align: center;
+      margin-top: 16px;
+      margin-left: 3px;
+      font-size: 12px;
+    }
+    .autor{
+        display: flex;
+        border-top: solid 4px var(--color3);
+    }
+ 
+ 
+   }
