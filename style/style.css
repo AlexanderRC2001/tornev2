@@ -398,7 +398,7 @@ a{
     text-align: center;
 }
 #req2{
-    background-image: url("/img/futbol.png");
+    background-image: url("../img/futbol.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-color: var(--color-cajas);
