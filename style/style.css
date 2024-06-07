@@ -8,7 +8,7 @@ body {
     filter: contrast(90%);
     font-family: "Montserrat", sans-serif;
     background-color: black;
-    background-image: url(/img/qqquad.svg);
+    background-image: url(../img/qqquad.svg);
     justify-content: center;
    width: 100%;
     
@@ -152,7 +152,7 @@ nav {
 
 
 #img1 {
-    background-image: url(/img/baloncesto.png);
+    background-image: url(../img/baloncesto.png);
     background-size: 50% 100%;
     background-repeat: no-repeat;
     background-position: 280px;
@@ -160,14 +160,14 @@ nav {
    
 }
 #img2 {
-    background-image: url(/img/voleivol.png);
+    background-image: url(../img/voleivol.png);
     background-size: 50% 90%;
     background-repeat: no-repeat;
     background-position: 310px;
    
 }
 #img3 {
-    background-image: url(/img/futbol.png);
+    background-image: url(../img/futbol.png);
     background-size: 50% 99%;
     background-repeat: no-repeat;
     background-position: 280px;
