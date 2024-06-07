@@ -398,7 +398,7 @@ a{
     text-align: center;
 }
 #req2{
-    background-image: url("../img/futbol.png");
+    background-image: url(../img/futbol.png);
     background-size: contain;
     background-repeat: no-repeat;
     background-color: var(--color-cajas);
@@ -752,7 +752,7 @@ footer h3{
 
 
 #img1 {
-    background-image: url(/img/baloncesto.png);
+    background-image: url(../img/baloncesto.png);
     background-size: 40% 90%;
     background-repeat: no-repeat;
     background-position: 250px;
@@ -760,14 +760,14 @@ footer h3{
    
 }
 #img2 {
-    background-image: url(/img/voleivol.png);
+    background-image: url(../img/voleivol.png);
     background-size: 55% 90%;
     background-repeat: no-repeat;
     background-position: 210px;
    
 }
 #img3 {
-    background-image: url(/img/futbol.png);
+    background-image: url(../img/futbol.png);
     background-size: 40% 99%;
     background-repeat: no-repeat;
     background-position: 250px;
@@ -1005,7 +1005,7 @@ a{
     font-size: 15px;
 }
 #req2{
-    background-image: url("/img/futbol.png");
+    background-image: url(../img/futbol.png);
     background-size: contain;
     background-repeat: no-repeat;
     background-color: var(--color-cajas);
@@ -1105,7 +1105,7 @@ a{
      text-align: center;
  }
  #img1 {
-     background-image: url(/img/baloncesto.png);
+     background-image: url(../img/baloncesto.png);
      background-size: 20% 90%;
      background-repeat: no-repeat;
      background-position: 480px;
@@ -1116,14 +1116,14 @@ a{
      justify-content: center;
  }
  #img2 {
-     background-image: url(/img/voleivol.png);
+     background-image: url(../img/voleivol.png);
      background-size: 20% 90%;
      background-repeat: no-repeat;
      background-position: 530px;
     
  }
  #img3 {
-     background-image: url(/img/futbol.png);
+     background-image: url(../img/futbol.png);
      background-size: 20% 99%;
      background-repeat: no-repeat;
      background-position: 560px;
@@ -1310,7 +1310,7 @@ a{
      font-size: 14px;
  }
  #req2{
-     background-image: url("/img/futbol.png");
+     background-image: url(../img/futbol.png);
      background-size: contain;
      background-repeat: no-repeat;
      background-color: var(--color-cajas);
@@ -1489,7 +1489,7 @@ a{
      text-align: center;
  }
  #img1 {
-     background-image: url(/img/baloncesto.png);
+     background-image: url(../img/baloncesto.png);
      background-size: 20% 90%;
      background-repeat: no-repeat;
      background-position: 480px;
@@ -1500,14 +1500,14 @@ a{
      justify-content: center;
  }
  #img2 {
-     background-image: url(/img/voleivol.png);
+     background-image: url(../img/voleivol.png);
      background-size: 20% 90%;
      background-repeat: no-repeat;
      background-position: 530px;
     
  }
  #img3 {
-     background-image: url(/img/futbol.png);
+     background-image: url(../img/futbol.png);
      background-size: 20% 99%;
      background-repeat: no-repeat;
      background-position: 560px;
@@ -1697,7 +1697,7 @@ a{
      font-size: 14px;
  }
  #req2{
-     background-image: url("/img/futbol.png");
+     background-image: url("../img/futbol.png");
      background-size: contain;
      background-repeat: no-repeat;
      background-color: var(--color-cajas);
